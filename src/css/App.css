@@ -2167,6 +2167,14 @@ section.wrapper header h2, article.wrapper header h2 {
 	margin: 0 0 .5em 0;
 }
 
+article {
+	text-align: center;
+}
+
+
+
+
+
 section.wrapper header p, article.wrapper header p {
 	font-size: 1em;
 }
@@ -2182,7 +2190,7 @@ section.wrapper.style1, article.wrapper.style1 {
 
 section.wrapper.style2, article.wrapper.style2 {
 	color: #5385c1;
-	background: #bacee6;
+	background: #cbe5fd;
 }
 
 section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
@@ -3290,7 +3298,7 @@ button:disabled,
 
 #banner {
 	padding: 12em 0 10em 0;
-	background-image: url('../images/banner.jpg');
+	background-image: url('../images/waves.jpg');
 	background-size: cover;
 	background-position: top;
 	background-attachment: fixed;

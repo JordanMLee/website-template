@@ -5,11 +5,12 @@ class Header extends Component {
 		return (
 			<header id="header">
 				<div className="inner">
-					<a href="index.html" className="logo">Company</a>
+					<a href="index.html" className="logo">Fast Software</a>
 					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="elements.html">Elements</a>
+						<a href="#">Generics</a>
+						<a href="#">Elements</a>
+						<a href="#">Random</a>
+						<a href="#">Contact</a>
 					</nav>
 					<a href="#navPanel" className="navPanelToggle"><span className="fa fa-bars"></span></a>
 				</div>

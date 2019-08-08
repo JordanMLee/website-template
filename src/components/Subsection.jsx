@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FaCloudDownloadAlt, FaCogs, FaWrench } from 'react-icons/fa';
+import Article from './subcomponents/Article';
 
 class Subsection extends Component {
 	render() {
@@ -7,25 +8,13 @@ class Subsection extends Component {
 			<section id="four" className="wrapper style2 special">
 				<div className="inner">
 					<header className="align-center">
-						<h2>Fusce ultrices fringilla metus</h2>
-						<span className="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
+						<h2>Are you ready for the next digital transformation? </h2>
+						<span className="byline">Click the links below for more information</span>
 					</header>
 					<div className="flex flex-3">
-						<article>
-							<span> <FaCloudDownloadAlt /></span>
-							<p>Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad torquent per conubia nostra.</p>
-							<a href="#" className="button special">More Info</a>
-						</article>
-						<article>
-							<span> <FaCogs /></span>
-							<p>Etiam neque. Vivamus consequat lorem at nisl. Nullam wisi a sem semper eleifend. Donec mattis.</p>
-							<a href="#" className="button special">More Info</a>
-						</article>
-						<article>
-							<span> <FaWrench /></span>
-							<p> Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus.</p>
-							<a href="#" className="button special">More Info</a>
-						</article>
+						<Article  topic={<FaCogs />} description={	<p> Etiam neque. Vivamus consequat lorem at nisl. Nullam wisi a sem semper eleifend. Donec mattis.</p>}/>
+						<Article topic={<FaCloudDownloadAlt />} description={	<p> Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad torquent per conubia nostra.</p>}/>
+						<Article  topic={<FaWrench />} description={	<p> Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus.</p>}/>
 					</div>
 				</div>
 			</section>

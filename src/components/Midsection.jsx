@@ -6,8 +6,8 @@ class Midsection extends Component {
 			<section id="three" className="wrapper special">
 				<div className="inner">
 					<header className="align-center">
-						<h2>Nunc Dignissim</h2>
-						<p>Aliquam erat volutpat nam dui </p>
+						<h2>Data Is Everything</h2>
+						<p>Let us show how it's done</p>
 					</header>
 					<div className="flex flex-2">
 						<article>

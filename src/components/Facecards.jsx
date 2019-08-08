@@ -1,43 +1,35 @@
 import React, {Component} from 'react';
 
+import Card from './subcomponents/Card';
+import man from "../images/pic03.jpg";
+import woman from "../images/pic06.jpg"
+import selfie from "../images/selfie.jpg"
+
 class Facecards extends Component {
+	constructor() {
+		super();
+		this.state = {
+			pictures: {
+				man1: man,
+				woman1:woman,
+				jordan:selfie
+			}
+		}
+	}
+
 	render() {
 		return (
 			<section id="two" className="wrapper style1 special">
 				<div className="inner">
 					<header>
-						<h2>Ipsum Feugiat</h2>
-						<p>Semper suscipit posuere apede</p>
+						<h2>Development Team</h2>
+						<p>We really like to code cool things</p>
 					</header>
 					<div className="flex flex-4">
-						<div className="box person">
-							<div className="image round">
-								<img src={require("../images/pic03.jpg")} alt="Person 1" />
-							</div>
-							<h3>Magna</h3>
-							<p>Cipdum dolor</p>
-						</div>
-						<div className="box person">
-							<div className="image round">
-								<img src={require("../images/pic04.jpg")} alt="Person 2" />
-							</div>
-							<h3>Ipsum</h3>
-							<p>Vestibulum comm</p>
-						</div>
-						<div className="box person">
-							<div className="image round">
-								<img src={require("../images/pic05.jpg")} alt="Person 3" />
-							</div>
-							<h3>Tempus</h3>
-							<p>Fusce pellentes</p>
-						</div>
-						<div className="box person">
-							<div className="image round">
-								<img src={require("../images/pic06.jpg")} alt="Person 4" />
-							</div>
-							<h3>Dolore</h3>
-							<p>Praesent placer</p>
-						</div>
+						<Card image={this.state.pictures.man1}/>
+						<Card image={this.state.pictures.woman1}/>
+						<Card image={this.state.pictures.jordan} name={"Jordan"} description={"the Real React Guru"}/>
+						<Card image={this.state.pictures.woman1}/>
 					</div>
 				</div>
 			</section>
